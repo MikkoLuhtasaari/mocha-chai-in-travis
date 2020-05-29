@@ -23,3 +23,4 @@ A test project try out testing JS project with Mocha and Chai in Travis CI.
     * This seemed to be the more promising of the two options
 
 [![Build Status](https://travis-ci.org/MikkoLuhtasaari/mocha-chai-in-travis.svg?branch=master)](https://travis-ci.org/MikkoLuhtasaari/mocha-chai-in-travis)
+[![Coverage Status](https://coveralls.io/repos/github/MikkoLuhtasaari/mocha-chai-in-travis/badge.svg?branch=master)](https://coveralls.io/github/MikkoLuhtasaari/mocha-chai-in-travis?branch=master)
