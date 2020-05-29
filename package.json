@@ -5,15 +5,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "mocha --reporter mochawesome"
+    "test": "c8 --exclude src/.internal --exclude test --reporter none mocha --reporter mochawesome",
+    "posttest": "c8 --exclude src/.internal --exclude test report --reporter html"
   },
   "repository": {
     "type": "git",
-    "url": "git@course-gitlab.tuni.fi:ITC/CS/tieta9/test_project_template2.git"
+    "url": "git@github.com:MikkoLuhtasaari/mocha-chai-in-travis.git"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "c8": "^7.1.2",
     "chai": "^4.2.0",
     "mocha": "^7.2.0",
     "mochawesome": "^6.1.1"
