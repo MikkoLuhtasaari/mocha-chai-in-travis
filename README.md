@@ -14,15 +14,3 @@ A test project try out testing JS project with Mocha and Chai in Travis CI.
 * Run tests with ```npm run-script localtest```
 
   * ``npm test`` is meant to only be used in Travis CI since it uploads coverage statistics to Coveralls
-
-## Known issues
-
-* Test report artifact upload to S3 is not working properly.
-
-  * Previously used credentials are removed from AWS IAM and need to be regenerated if we want to pursue this path further.
-
-  * Artifact upload did not seem to recognize AWS regions `eu-north-1` or `eu-west-1`.
-
-  * S3 deployment seemed to go a bit further but PUT request headers seemed to be malformed.
-  
-    * This seemed to be the more promising of the two options
