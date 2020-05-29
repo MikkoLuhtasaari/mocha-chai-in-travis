@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "c8 --exclude src/.internal --exclude test --reporter none mocha --reporter mochawesome",
-    "posttest": "c8 --exclude src/.internal --exclude test report --reporter=text-lcov | coveralls"
+    "posttest": "c8 --exclude src/.internal --exclude test report --reporter=text-lcov | coveralls",
+    "localtest": "c8 --exclude src/.internal --exclude test --reporter none mocha --reporter mochawesome",
+    "postlocaltest": "c8 --exclude src/.internal --exclude test report --reporter html"
   },
   "repository": {
     "type": "git",
