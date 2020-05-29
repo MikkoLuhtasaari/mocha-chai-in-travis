@@ -15,4 +15,10 @@ describe("Slice", () => {
   it("returns an empty array when given an empty array", () => {
     expect(slice([])).to.deep.equal([]);
   });
+  it("correctly slices an array when negative start is given", () => {
+    expect(slice([1, 2, 3, 4], -1)).to.deep.equal([4]);
+  });
+  it("correctly slices an array when negative end is given", () => {
+    expect(slice([1, 2, 3, 4], 0, -1)).to.deep.equal([1, 2, 3]);
+  });
 });
